@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		3BF830F126018BA7003949A5 /* mapToAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapToAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF830F426018BA7003949A5 /* mapToARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapToARApp.swift; sourceTree = "<group>"; };
-		3BF830F626018BA7003949A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BF830F626018BA7003949A5 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		3BF830F826018BA8003949A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF830FB26018BA8003949A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BF830FD26018BA8003949A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
