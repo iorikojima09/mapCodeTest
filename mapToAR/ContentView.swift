@@ -3,7 +3,14 @@
 //  mapToAR
 //
 //  Created by 小島伊織 on 2021/03/17.
-//
+/*
+ 今実装されてる機能
+ ・地図の表示
+ ・3つの場所にピン打ち　そのピンの形とピンの色を変更
+ 
+ 今からやること
+ ・現在地を表示して移動をフォロ
+ */
 
 import SwiftUI
 import MapKit
@@ -60,7 +67,3 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
-
-/*
- testcode
-*/
