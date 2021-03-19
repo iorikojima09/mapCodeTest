@@ -4,11 +4,10 @@
 //
 //  Created by 小島伊織 on 2021/03/17.
 /*
- 今実装されてる機能
+ このプロジェクト全体で
+ 実装されてる機能
  ・地図の表示
  ・3つの場所にピン打ち　そのピンの形とピンの色を変更
- 
- 今からやること
  ・現在地を表示して移動をフォロ
  */
 
@@ -33,6 +32,7 @@ struct ContentView: View {
         Spot(latitude: 35.681666, longitude: 139.770362)
     ]
     //座標と領域を指定する
+    /*
     @State var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
             latitude: 35.6805702,  //緯度
@@ -41,8 +41,16 @@ struct ContentView: View {
         latitudinalMeters: 1000.0, //南北距離
         longitudinalMeters: 1000.0 //東西距離
     )
+    */
+    //managerの更新を観測する
+    @ObservedObject var manager = LocationManager()
+    //ユーザートラッキングモード（追従モード）
+    @State var trackingMode = MapUserTrackingMode.follow
+    
     var body: some View {
-        Map(coordinateRegion: $region,
+        Map(coordinateRegion: $manager.region,
+            showsUserLocation: true,
+            userTrackingMode: $trackingMode,
             annotationItems: spotlist,
             //annotationContent:{ spot in MapMarker(coordinate: spot.coordinate, tint: .orange)}
             annotationContent:{ spot in
@@ -58,6 +66,7 @@ struct ContentView: View {
         )
         .edgesIgnoringSafeArea(.all)
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
